@@ -32,7 +32,8 @@ body {
   --color-black-100: #100d25;
   --color-black-200: #090325;
   --color-white-100: #f3f3f3;
-  --color-green: #1fdf64;
+  /* --color-green: #1fdf64; */
+  --color-green: #ff8c00;
   --color-black: #000;
   --color-deep-night-black: #121212;
   --color-midnight-black: #181818;
@@ -46,7 +47,16 @@ body {
   --breakpoint-xs: 450px;
   --font-display: 'Circular', sans-serif;
   --font-cascadia: 'cascadia-normal', monospace;
-  --font-circular: 'circular-normal', sans-serif;
+  --font-circular-normal: 'circular-normal', sans-serif;
+  --font-circular-light: 'circular-light', sans-serif;
+  --font-circular-medium: 'circular-medium', sans-serif;
+  --font-circular-bold: 'circular-bold', sans-serif;
+}
+
+@layer utilities {
+  .transition {
+    transition: all 200ms 1s;
+  }
 }
 
 @font-face {
@@ -78,6 +88,39 @@ body {
   font-weight: 700;
   font-display: swap;
   src: url('/fonts/Circular-Bold.otf') format('opentype');
+}
+
+/* Hide scrollbar for chrome, safari and opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge*/
+  scrollbar-width: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1fdf64;
+  border-radius: 8px;
+}
+/* Handle  Hover*/
+::-webkit-scrollbar-thumb {
+  background: #1fdf64;
 }
 
 .progress-bar {
@@ -413,7 +456,7 @@ body {
   height: 100%;
   left: 0;
   opacity: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
   position: absolute;
   top: 0;
   transition: all 0.55s;
@@ -426,7 +469,7 @@ body {
   height: 100%;
   left: 0;
   opacity: 0;
-  pointer-events: none;
+  /* ts: none; */
   position: absolute;
   top: 0;
   transition: all 0.55s;
@@ -452,6 +495,15 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+.boxShadow:hover {
+  box-shadow:
+    rgba(31, 223, 100, 1) 0px 2px 5px -1px,
+    rgba(31, 223, 100, 1) 0px 1px 3px -1px;
+  -webkit-box-shadow: 0px 0px 11px -3px rgba(31, 223, 100, 1);
+  -moz-box-shadow: 0px 0px 11px -3px rgba(31, 223, 100, 1);
+  box-shadow: 0px 0px 11px -3px rgba(31, 223, 100, 1);
 }
 
 :where(.css-dev-only-do-not-override-1odpy5d).ant-progress.ant-progress-circle

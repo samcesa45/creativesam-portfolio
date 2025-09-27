@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         // className={`${inter.variable} ${poppins.variable} antialiased bg-black`}
-        className={`font-circular antialiased bg-black`}
+        className={`font-circular-normal antialiased bg-black`}
         data-aos-easing="ease"
         data-aos-duration="400"
         data-aos-delay="0"

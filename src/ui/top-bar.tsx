@@ -1,18 +1,18 @@
 'use client';
-import React, { useState } from 'react';
+import { useLayout } from '@/context/layout-provider';
+import React from 'react';
 import { FaBars, FaMousePointer } from 'react-icons/fa';
 import { SlOptionsVertical } from 'react-icons/sl';
 
 export default function TopBar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [intro, setIntro] = useState(false);
+  const {toggleIntro,toggleOpen} = useLayout()
   return (
     <div className="lg:hidden">
       <div className=" bg-deep-night-black text-lightgray w-full h-10 flex items-center justify-between px-2 lg:hidden relative">
         {/* left icon */}
         <div
           className="icon flex items-center gap-x-2"
-          onClick={(e) => setIntro(!intro)}
+          onClick={toggleIntro}
         >
           <span className="icon border-2 text-green g p-1 text-sm rounded-lg">
             <SlOptionsVertical />
@@ -25,7 +25,7 @@ export default function TopBar() {
         {/* right icon */}
         <div
           className="icon flex items-center gap-x-2"
-          onClick={(e) => setIsOpen(!isOpen)}
+          onClick={toggleOpen}
         >
           <span className="icon border-2 text-green border-green p-1 text-sm rounded-lg">
             {' '}

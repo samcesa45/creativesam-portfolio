@@ -6,15 +6,8 @@ import {
   FaLinkedin,
   FaTwitter,
 } from 'react-icons/fa';
-// import Contact from './Contact';
-// import Download from './Download';
-// import Languages from './Languages';
-// import Location from './Location';
-// import Tools from './Tools';
-// import Skills from './Skills';
 import Image from 'next/image';
 import { NAME, DESIGNATION, SOCIAL_LINKS } from '@/constants/index';
-import Osama from '../../../public/images/osama.jpg';
 import { logos } from '@/assets';
 import { SetStateAction } from 'react';
 import Download from './download';
@@ -67,9 +60,14 @@ const Intro = ({}: Props) => {
         >
           <FaGithub />
         </Link>
-        {/* <Link href={SOCIAL_LINKS.TWITTER} target='_blank' rel='noreferrer' className=''>
+        <Link
+          href={SOCIAL_LINKS.TWITTER}
+          target="_blank"
+          rel="noreferrer"
+          className=""
+        >
           <FaTwitter />
-        </Link> */}
+        </Link>
         {/* <Link href={SOCIAL_LINKS.FACEBOOK} target='_blank' rel='noreferrer' className=''>
           <FaFacebook />
         </Link> */}

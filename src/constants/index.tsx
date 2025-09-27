@@ -48,6 +48,7 @@ import laura from '../assets/laura.png';
 import bpa from '../assets/bpa.png';
 import zeltechnology from '../assets/zeltechnology.png';
 import { TabItem } from '@/components/tabs';
+import { SetStateAction } from 'react';
 
 export const navLinks = [
   {
@@ -666,7 +667,7 @@ export { services, technologies, experiences, testimonials, projects, tabData };
 
 export const NAME = 'Sam Christopher';
 
-export const DESIGNATION = `MERN Stack Developer | Open Source Contributor | Tech Blogger`;
+export const DESIGNATION = `Web & Mobile Artisan | Wordpress Expert | Avid Learner`;
 
 export const DETAILS = {
   Residence: 'Nigeria',
@@ -676,17 +677,17 @@ export const DETAILS = {
 
 export const SKILLS = [
   {
-    title: 'MERN Stack Developer',
-    level: '75%',
+    title: 'Next js Developer',
+    level: '80%',
   },
   {
     title: 'React Developer',
     level: '91%',
   },
-  // {
-  //   title: 'Desktop Application Developer',
-  //   level: '75%',
-  // },
+  {
+    title: 'Nest Js Developer',
+    level: '50%',
+  },
   {
     title: 'Backend Developer',
     level: '54%',
@@ -702,23 +703,19 @@ export const TECH_STACK = [
   'ReactJS',
   'NextJS',
   'TypeScript',
-  'NodeJS',
+  'NestJS',
   'Redux',
   'Zustand',
   'CSS',
   'SCSS',
   'TailwindCSS',
-  'Ant Design',
-  'Material UI',
-  'Next UI',
+  'Shadcn UI',
   'REST API',
-  'MongoDB',
-  'MySQL',
+  'Tanstackquery',
+  'Posgresql',
   'Git',
   'GitHub',
   'Jira',
-  'Figma',
-  'Adobe XD',
 ];
 
 export const CONTACTS = {
@@ -731,3 +728,9 @@ export const SOCIAL_LINKS = {
   TWITTER: 'https://twitter.com/iosamajavaid',
   FACEBOOK: 'https://www.facebook.com/iosamajavaid',
 };
+
+export type Props = {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<SetStateAction<boolean>>;
+  children?: React.ReactNode;
+}
