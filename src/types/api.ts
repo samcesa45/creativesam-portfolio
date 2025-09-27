@@ -25,3 +25,12 @@ export type Expertise = {
   title: string;
   desc: string;
 };
+
+export type Recommendations = {
+  id: string,
+  name: string;
+  image: string;
+  designation: string;
+  view:string;
+  linkednURL: string;
+}
