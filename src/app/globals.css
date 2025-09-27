@@ -115,12 +115,12 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1fdf64;
+  background: #ff8c00;;
   border-radius: 8px;
 }
 /* Handle  Hover*/
 ::-webkit-scrollbar-thumb {
-  background: #1fdf64;
+  background: #ff8c00;
 }
 
 .progress-bar {

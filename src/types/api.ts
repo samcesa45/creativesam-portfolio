@@ -27,10 +27,18 @@ export type Expertise = {
 };
 
 export type Recommendations = {
-  id: string,
+  id: string;
   name: string;
   image: string;
   designation: string;
-  view:string;
+  view: string;
   linkednURL: string;
-}
+};
+
+export type Reviews = {
+  id: string;
+  clientName: string;
+  clientLocation: string;
+  clientSource: string;
+  clientReview: string;
+};

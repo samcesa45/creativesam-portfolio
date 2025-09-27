@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center">
           <Link href="https://www.fiverr.com/samcvesa45" target="_blank">
-            Made with ❤️ by <span className="font-bold">Sam</span>
+            Made with ❤️ by <span className="font-bold">samcesa45</span>
           </Link>
         </div>
         <div className="hidden md:flex items-center">

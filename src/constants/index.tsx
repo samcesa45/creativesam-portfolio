@@ -733,4 +733,4 @@ export type Props = {
   isOpen: boolean;
   setIsOpen: React.Dispatch<SetStateAction<boolean>>;
   children?: React.ReactNode;
-}
+};

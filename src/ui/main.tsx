@@ -6,8 +6,8 @@ import Nav from './common/nav';
 import { cn } from '@/lib/utils';
 import { useLayout } from '@/context/layout-provider';
 
-export default function Main({children}:{children:React.ReactNode}) {
-  const {intro,isOpen,toggleIntro,toggleOpen} = useLayout()
+export default function Main({ children }: { children: React.ReactNode }) {
+  const { intro, isOpen, toggleIntro, toggleOpen } = useLayout();
 
   return (
     <div className="flex relative h-full justify-between gap-x-3">
@@ -27,12 +27,13 @@ export default function Main({children}:{children:React.ReactNode}) {
           className="fixed top-0 left-0  w-full h-full bg-black/50 backdrop-blur-[2px] z-40"
         />
       )}
-       {/* overlay */}
+      {/* overlay */}
 
       {/* middle of screen */}
-      <div className='w-full h-auto lg:w-9/12 shadow-2xl bg-deep-night-black relative overflow-auto overflow-x-hidden no-scrollbar'>{children}</div>
-       {/* middle of screen */}
-
+      <div className="w-full h-auto lg:w-9/12 shadow-2xl bg-deep-night-black relative overflow-auto overflow-x-hidden no-scrollbar">
+        {children}
+      </div>
+      {/* middle of screen */}
 
       {/* right side */}
       <div
