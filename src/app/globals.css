@@ -4,6 +4,7 @@
 :root {
   /* --background: #ffffff;
   --foreground: #171717; */
+  --evening-black: #1a1a1a;
 }
 * {
   /* margin: 0;
@@ -32,8 +33,9 @@ body {
   --color-black-100: #100d25;
   --color-black-200: #090325;
   --color-white-100: #f3f3f3;
-  /* --color-green: #1fdf64; */
-  --color-green: #ff8c00;
+  /* --color-green: #ff8c00; */
+  /* --color-green: #08a9ff; */
+  --color-green: #1fdf64;
   --color-black: #000;
   --color-deep-night-black: #121212;
   --color-midnight-black: #181818;
@@ -115,12 +117,12 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ff8c00;;
+  background: #1fdf64;
   border-radius: 8px;
 }
 /* Handle  Hover*/
 ::-webkit-scrollbar-thumb {
-  background: #ff8c00;
+  background: #1fdf64;
 }
 
 .progress-bar {
@@ -496,15 +498,38 @@ body {
     transform: scale(1);
   }
 }
-
+.card_stylings {
+  background: #1a1a1a;
+  border-radius: 0.75rem;
+}
+.card_stylings:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(31, 223, 100, 0.1),
+    rgba(79, 70, 229, 0.05)
+  );
+}
 .boxShadow:hover {
   box-shadow:
     rgba(31, 223, 100, 1) 0px 2px 5px -1px,
     rgba(31, 223, 100, 1) 0px 1px 3px -1px;
-  -webkit-box-shadow: 0px 0px 11px -3px rgba(31, 223, 100, 1);
+  /* -webkit-box-shadow: 0px 0px 11px -3px rgba(31, 223, 100, 1);
   -moz-box-shadow: 0px 0px 11px -3px rgba(31, 223, 100, 1);
-  box-shadow: 0px 0px 11px -3px rgba(31, 223, 100, 1);
+  box-shadow: 0px 0px 11px -3px rgba(31, 223, 100, 1); */
 }
+
+.userIcon:focus-within #icon,
+.mailIcon:focus-within #icon,
+.textIcon:focus-within #icon {
+  color: #1fdf64;
+}
+
+/* .userIcon:focus-within input,
+.mailIcon:focus-within input,
+.textIcon:focus-within textarea {
+  border-color: #1fdf64;  
+  color: #1fdf64;
+} */
 
 :where(.css-dev-only-do-not-override-1odpy5d).ant-progress.ant-progress-circle
   .ant-progress-text {

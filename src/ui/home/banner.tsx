@@ -14,7 +14,7 @@ export default function Banner() {
             <div>
               <div>
                 <h1 className="text-3xl sm:text-4xl xl:text-5xl text-snow font-bold">
-                  Hi, I'm Sam
+                  Hi, I'm Sam Christopher
                 </h1>
               </div>
               <div>

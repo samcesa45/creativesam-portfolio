@@ -11,7 +11,7 @@ export default function RecommendationCard({
 }) {
   return (
     <CardLayout>
-      <div className="p-8 h-full relative card_stylings transition bg-evening-black/95 rounded-xl hover:bg-gradient-to-br hover:from-green/10 hover:to-indigo-600/5">
+      <div className="p-8 h-full relative card_stylings">
         <Image
           width={64}
           height={64}

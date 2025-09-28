@@ -7,7 +7,7 @@ import { MdLocationOn } from 'react-icons/md';
 export default function ReviewCard({ data }: { data: Reviews }) {
   return (
     <CardLayout>
-      <div className="flex flex-col justify-between card_stylings w-80 md:w-96 h-full p-4 md:p-8 transition bg-evening-black/95 rounded-xl hover:bg-gradient-to-br hover:from-green/10 hover:to-indigo-600/5">
+      <div className="flex flex-col justify-between card_stylings w-80 md:w-96 h-full p-4 md:p-8">
         <div className="flex justify-between items-center">
           <div className="flex flex-col gap-1">
             <span className="text-sm text-snow font-bold">

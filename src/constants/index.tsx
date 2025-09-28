@@ -734,3 +734,40 @@ export type Props = {
   setIsOpen: React.Dispatch<SetStateAction<boolean>>;
   children?: React.ReactNode;
 };
+
+export const contactItems = [
+  {
+    label: 'card1',
+    items: [
+      {
+        label: 'Country',
+        name: 'Nigeria',
+      },
+      {
+        label: 'City',
+        name: 'Abuja',
+      },
+      {
+        label: 'Company',
+        name: 'creativesam45',
+      },
+    ],
+  },
+  {
+    label: 'card2',
+    items: [
+      {
+        label: 'Email',
+        name: 'sameshiet45@gmail.com',
+      },
+      {
+        label: 'Linkedin',
+        name: 'creativesam45',
+      },
+      {
+        label: 'Phone',
+        name: '091282933889',
+      },
+    ],
+  },
+];

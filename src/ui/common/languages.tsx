@@ -23,7 +23,7 @@ export default function Languages() {
         <div className="flex flex-col items-center text-white justify-center gap-y-2">
           <Progress
             className="text-white!"
-            strokeColor="#FF8C00"
+            strokeColor="#1fdf64"
             type="circle"
             percent={frenchCount}
             size={75}
@@ -32,7 +32,7 @@ export default function Languages() {
         </div>
         <div className="flex flex-col items-center justify-center gap-y-2">
           <Progress
-            strokeColor="#FF8C00"
+            strokeColor="#1fdf64"
             type="circle"
             percent={englishCount}
             size={75}
