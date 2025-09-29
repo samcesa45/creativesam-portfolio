@@ -9,7 +9,7 @@ export default function Portfolio() {
   const portfolios = portfolioQuery?.data;
   return (
     <div className="grid items-center grid-flow-row md:grid-cols-2 grid-rows-auto gap-4 px-8 my-6">
-      {!portfolioQuery?.isLoading
+      {portfolioQuery?.isLoading
         ? [1, 2, 3].map((_, index) => (
             <ImageParagraphSkeleton
               key={index}
