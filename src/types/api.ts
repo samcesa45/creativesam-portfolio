@@ -42,3 +42,25 @@ export type Reviews = {
   clientSource: string;
   clientReview: string;
 };
+
+export type Edu = {
+  id: string;
+  title: string;
+  degree: string;
+  detail: string;
+  year: string;
+};
+export type Exp = {
+  id: string;
+  title: string;
+  role: string;
+  url: string;
+  desc: string;
+  year: string;
+  location: string;
+};
+
+export type Background = {
+  eduCards: Edu[];
+  expCards: Exp[];
+};
