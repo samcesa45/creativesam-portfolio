@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getObjectKeys(obj: Object) {
+export function getObjectKeys(obj: object) {
   return Object.keys(obj);
 }
 

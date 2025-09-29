@@ -8,6 +8,7 @@ import {
 import { UseFormReturn } from 'react-hook-form';
 import { formatErrors } from '@/lib/utils';
 import { Form, Input, Textarea } from '@/ui/form';
+import { toast } from 'sonner';
 import { BsChatTextFill } from 'react-icons/bs';
 import { Button } from '@/ui/buttons/button';
 import { HiMail, HiUser } from 'react-icons/hi';
@@ -23,14 +24,14 @@ export default function ContactForm() {
       },
       {
         onSuccess: () => {
-          // toast.success("Form submitted successfully");
+          toast.success("Form submitted successfully");
           if (formReset) {
             formReset();
           }
         },
         onError: (error: any) => {
           const formError = formatErrors(error);
-          // toast.error(formError)
+          toast.error(formError)
         },
       },
     );
