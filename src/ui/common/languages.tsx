@@ -28,7 +28,7 @@ export default function Languages() {
             percent={frenchCount}
             size={75}
           />
-          <span className="text-xs font-bold text-snow">French</span>
+          <span className="text-xs font-bold text-snow">Advanced</span>
         </div>
         <div className="flex flex-col items-center justify-center gap-y-2">
           <Progress
@@ -37,7 +37,7 @@ export default function Languages() {
             percent={englishCount}
             size={75}
           />
-          <span className="text-xs font-bold text-snow">English</span>
+          <span className="text-xs font-bold text-snow">Fluent</span>
         </div>
       </div>
     </div>

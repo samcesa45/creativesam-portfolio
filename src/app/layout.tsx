@@ -1,18 +1,6 @@
 import './globals.css';
-import { Inter, Poppins } from 'next/font/google';
 import { Metadata } from 'next';
 import Providers from '@/providers/Providers';
-
-const inter = Inter({
-  variable: '--font-inter',
-  weight: ['100', '200', '300', '400', '500', '600', '700'],
-  subsets: ['latin'],
-});
-const poppins = Poppins({
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700'],
-  subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
   title: 'creative-sam-portfolio',

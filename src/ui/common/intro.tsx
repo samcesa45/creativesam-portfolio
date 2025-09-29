@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import {
   FaDownload,
-  FaFacebook,
   FaGithub,
   FaLinkedin,
   FaTwitter,
@@ -12,8 +11,6 @@ import { logos } from '@/assets';
 import { SetStateAction } from 'react';
 import Download from './download';
 import Contact from './contact';
-import Location from './location';
-import Languages from './languages';
 import Skills from './skills';
 import Tools from './tools';
 type Props = {
@@ -26,7 +23,9 @@ const Intro = ({}: Props) => {
       {/* fixed at top */}
       <div className="headerr z-50 absolute bg-midnight-black backdrop-blur-sm inset-y-0 h-48 top-0 flex items-center justify-center w-full flex-col px-4 gap-y-4">
         <Image
-          className="w-20 h-20 rounded-full"
+          className="w-16 h-16 rounded-full"
+          width={200}
+          height={200}
           src={logos}
           alt="logo picture"
         />
@@ -41,9 +40,9 @@ const Intro = ({}: Props) => {
       </div>
 
       {/* middle components */}
-      <div className="beech z-20 flex flex-col overflow-y-scroll pt-48 top-48 space-y-6 divide-y divide-white overflow-x-hidden no-scrollbar px-4">
-        <Location />
-        <Languages />
+      <div className="beech z-20 flex flex-col overflow-y-scroll pt-48 top-48 mb-4 space-y-6 divide-y divide-white overflow-x-hidden no-scrollbar px-4">
+        {/* <Location /> */}
+        {/* <Languages /> */}
         <Skills />
         <Tools />
         <Contact />

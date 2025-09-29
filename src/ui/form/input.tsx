@@ -7,23 +7,18 @@ import React from 'react';
 export type InputProps = React.InputHTMLAttributes<HTMLInputElement> &
   FieldWrapperPassThroughProps & {
     className?: string;
-    icon?: React.ComponentType<{size?: number;color?:string;className?:string}>;
+    icon?: React.ComponentType<{
+      size?: number;
+      color?: string;
+      className?: string;
+    }>;
     registration?: Partial<UseFormRegisterReturn>;
     size?: number | string;
   };
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   (
-    {
-      className,
-      icon:Icon,
-      size,
-      type,
-      label,
-      error,
-      registration,
-      ...props
-    },
+    { className, icon: Icon, size, type, label, error, registration, ...props },
     ref,
   ) => {
     return (
@@ -31,11 +26,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         <div className="relative flex items-center group">
           {/* left icon */}
           {Icon && (
-            <span className='absolute inset-y-0 left-0 top-1/2 -translate-y-1/2 flex items-center pl-3 text-xl pointer-events-none group-focus-within:text-green transition-colors'>
-            <Icon
-              size={size}
-              className="transition-colors"
-            />
+            <span className="absolute inset-y-0 left-0 top-1/2 -translate-y-1/2 flex items-center pl-3 text-xl pointer-events-none group-focus-within:text-green transition-colors">
+              <Icon size={size} className="transition-colors" />
             </span>
           )}
           {/* left icon */}

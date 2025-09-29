@@ -1,8 +1,9 @@
+import React from 'react';
 import { contactItems } from '@/constants';
 import ContactForm from '@/features/contact/components/contact-form';
 import BannerLayout from '@/ui/common/banner-layout';
+import Footer from '@/ui/footer';
 import Link from 'next/link';
-import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { SiUpwork } from 'react-icons/si';
@@ -62,6 +63,8 @@ export default function ContactPage() {
           <ContactForm />
         </div>
       </div>
+      {/* Successmodal */}
+      <Footer />
     </BannerLayout>
   );
 }

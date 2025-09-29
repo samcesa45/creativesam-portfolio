@@ -4,10 +4,10 @@ import LinearBar from './linear-bar';
 
 export default function Skills() {
   return (
-    <div className="flex flex-col space-y-1 pt-6">
+    <div className="flex flex-col space-y-1 pt-6 pb-3">
       <div className="flex flex-col gap-y-4">
         <span className="text-snow text-xs font-bold bg-gradient-to-bl">
-          Experties and Competencies
+          Expertise & Competencies
         </span>
         <div className="flex flex-col space-y-4">
           {SKILLS.map((skill, index) => {

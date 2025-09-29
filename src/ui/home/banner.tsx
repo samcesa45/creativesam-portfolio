@@ -42,7 +42,7 @@ export default function Banner() {
                       </span>
                     </span>
                     {'</'}
-                    <span className="text-Green sm:text-base xl:text-lg font-bold">
+                    <span className="text-green sm:text-base xl:text-lg font-bold">
                       div
                     </span>
                     {'>'}

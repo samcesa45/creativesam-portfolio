@@ -15,13 +15,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   herobg,
 } from '@/assets';
@@ -47,7 +40,6 @@ import classPadi from '../assets/class-padi.png';
 import laura from '../assets/laura.png';
 import bpa from '../assets/bpa.png';
 import zeltechnology from '../assets/zeltechnology.png';
-import { TabItem } from '@/components/tabs';
 import { SetStateAction } from 'react';
 
 export const navLinks = [
@@ -623,95 +615,56 @@ const projects = [
   // },
 ];
 
-const tabData: TabItem[] = [
-  {
-    id: 0,
-    title: 'All',
-    images: [],
-    boxClass: 'portfolio-box-01 aos-init',
-  },
-  {
-    id: 1,
-    title: 'Web',
-    images: [
-      { src: stokops, alt: 'Image 5' },
-      { src: ezimo, alt: 'Image 6' },
-      { src: zelfarms, alt: 'Image 6' },
-      { src: iterum, alt: 'Image 4' },
-      { src: classPadi, alt: 'Image 4' },
-    ],
-    boxClass: 'portfolio-box-02',
-  },
-  {
-    id: 2,
-    title: 'Mobile',
-    images: [
-      { src: stokopsMobile, alt: 'Stokops Image' },
-      { src: zelfarmsMobile, alt: 'Zelfarms Image' },
-      { src: itranxit2, alt: 'Itranxit image' },
-    ],
-    boxClass: 'portfolio-box-01 aos-init',
-  },
-  {
-    id: 3,
-    title: 'Wordpress',
-    images: [
-      { src: '/images/laura.png', alt: 'laura Image' },
-      { src: '/images/dlplus.png', alt: 'Dlplus Image' },
-    ],
-    boxClass: 'portfolio-box-01 aos-init',
-  },
-];
-
-export { services, technologies, experiences, testimonials, projects, tabData };
-
 export const NAME = 'Sam Christopher';
 
-export const DESIGNATION = `Web & Mobile Artisan | Wordpress Expert | Avid Learner`;
+export const DESIGNATION = `Full-Stack Developer | React, Next.js, Nest.js, WordPress`;
 
 export const DETAILS = {
   Residence: 'Nigeria',
   City: 'Abuja',
-  Age: '23',
 };
 
 export const SKILLS = [
   {
-    title: 'Next js Developer',
+    title: 'React',
     level: '80%',
   },
   {
-    title: 'React Developer',
-    level: '91%',
+    title: 'React-Native',
+    level: '80%',
   },
   {
-    title: 'Nest Js Developer',
-    level: '50%',
+    title: 'Next.js',
+    level: '80%',
   },
   {
-    title: 'Backend Developer',
-    level: '54%',
+    title: 'Nest.js',
+    level: '60%',
   },
   {
-    title: 'Technical Blogger',
-    level: '83%',
+    title: 'Laravel',
+    level: '60%',
+  },
+  {
+    title: 'WordPress',
+    level: '80%',
   },
 ];
 
 export const TECH_STACK = [
-  'JavaScript',
+  'TypeScript',
   'ReactJS',
   'NextJS',
   'TypeScript',
   'NestJS',
-  'Redux',
+  'Tanstackquery',
   'Zustand',
+  'TailwindCSS',
   'CSS',
   'SCSS',
-  'TailwindCSS',
+  'Redux',
   'Shadcn UI',
   'REST API',
-  'Tanstackquery',
   'Posgresql',
   'Git',
   'GitHub',
