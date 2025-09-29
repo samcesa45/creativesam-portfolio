@@ -9,7 +9,7 @@ const createEnv = () => {
       .refine((s) => s === 'true' || s === 'false')
       .transform((s) => s === 'true')
       .optional(),
-    APP_URL: z.string().optional().default('localhost:3001'),
+    APP_URL: z.string().optional().default('https://creativesam-portfolio-q6q7.vercel.app'),
     APP_MOCK_API_PORT: z.string().optional().default('api'),
   });
 
