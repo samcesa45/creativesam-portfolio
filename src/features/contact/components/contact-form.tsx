@@ -24,14 +24,14 @@ export default function ContactForm() {
       },
       {
         onSuccess: () => {
-          toast.success("Form submitted successfully");
+          toast.success('Form submitted successfully');
           if (formReset) {
             formReset();
           }
         },
         onError: (error: any) => {
           const formError = formatErrors(error);
-          toast.error(formError)
+          toast.error(formError);
         },
       },
     );

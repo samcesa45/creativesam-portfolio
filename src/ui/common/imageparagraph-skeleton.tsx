@@ -11,12 +11,12 @@ export default function ImageParagraphSkeleton({
       role="status"
       className={cn(
         className,
-        'card_stylings max-w-2xl p-4 border shadow animate-pulse md:p-6 border-green/10',
+        'card_stylings p-4 border shadow animate-pulse md:p-6 border-green/10',
       )}
     >
       <div className="flex items-center justify-center h-48 mb-4 rounded bg-green/10">
         <svg
-          className="w-full h-12 text-green/10"
+          className="w-full h-12  text-green/10"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
           fill="currentColor"
@@ -29,7 +29,7 @@ export default function ImageParagraphSkeleton({
       <div className="h-2 rounded-full bg-green/10 mb-2.5" />
       <div className="h-2 rounded-full bg-green/10 mb-2.5" />
       <div className="h-2 rounded-full bg-green/10" />
-      <span className='sr-only'>Loading...</span>
+      <span className="sr-only">Loading...</span>
     </div>
   );
 }

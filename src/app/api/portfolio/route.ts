@@ -155,7 +155,6 @@ const portfolio = [
       },
     ],
   },
-  
 ];
 
 export async function GET() {
