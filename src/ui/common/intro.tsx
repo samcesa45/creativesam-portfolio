@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FaDownload, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Image from 'next/image';
 import { NAME, DESIGNATION, SOCIAL_LINKS } from '@/constants/index';
-import { logos } from '@/assets';
+import { logos } from '../../../public/assets';
 import { SetStateAction } from 'react';
 import Download from './download';
 import Contact from './contact';

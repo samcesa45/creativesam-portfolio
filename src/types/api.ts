@@ -64,3 +64,16 @@ export type Background = {
   eduCards: Edu[];
   expCards: Exp[];
 };
+
+export type Tech = {
+  tech: string;
+};
+
+export type Portfolio = {
+  id: string;
+  projectName: string;
+  url: string;
+  image: string;
+  projectDetail: string;
+  technologiesUsed: Tech[];
+};
