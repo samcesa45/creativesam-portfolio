@@ -18,12 +18,14 @@ export default function ExpCard({ data }: { data: Exp }) {
             {data?.url}
           </Link>
         </div>
-        <div className="text-lightgray text-sm font-normal mt-4 text-justify">
-          {data.desc}
-        </div>
+        <ul>
+          {data?.desc?.map((item,index)=>(
+            <li className='list-none text-lightgray text-sm font-normal mt-4 text-justify' key={`desc-${index}`}>{item}</li>
+          ))}
+        </ul>
         <div className="flex justify-between text-lightgray bg-deep-night-black w-full h-auto text-xs rounded-full py-3 px-6 mt-4 font-normal opacity-50">
-          <div>{data.year}</div>
-          <div>{data.location}</div>
+          <div>{data?.year}</div>
+          <div>{data?.location}</div>
         </div>
       </div>
     </CardLayout>

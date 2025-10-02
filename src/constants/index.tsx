@@ -73,13 +73,12 @@ export const TECH_STACK = [
 
 export const CONTACTS = {
   EMAIL: 'sameshiet45@gmail.com',
-  PHONE: '+923159591822',
+  PHONE: '+2348102820942',
 };
 export const SOCIAL_LINKS = {
-  GITHUB: 'https://github.com/osamajavaid',
-  LINKEDIN: 'https://www.linkedin.com/in/iosamajavaid/',
-  TWITTER: 'https://twitter.com/iosamajavaid',
-  FACEBOOK: 'https://www.facebook.com/iosamajavaid',
+  GITHUB: 'https://github.com/samcesa45',
+  LINKEDIN: 'https://www.linkedin.com/in/samuel-christopher-0117aa349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  TWITTER: 'https://x.com/samicode4love',
 };
 
 export type Props = {
@@ -119,7 +118,7 @@ export const contactItems = [
       },
       {
         label: 'Phone',
-        name: '091282933889',
+        name: '+2348102820942',
       },
     ],
   },

@@ -55,7 +55,7 @@ export type Exp = {
   title: string;
   role: string;
   url: string;
-  desc: string;
+  desc: string[];
   year: string;
   location: string;
 };

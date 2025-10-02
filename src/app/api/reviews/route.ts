@@ -23,7 +23,7 @@ const review = [
     clientLocation: 'Germany',
     clientSource: 'Fiverr',
     clientReview:
-      'Osama is extremely knowledgeable and helpful. He knows in and out of web app development . His understanding of different technologies and frameworks in the space is also very impressive. I hope I get the chance to work with him again',
+      'Samuel is extremely knowledgeable and helpful. He knows in and out of web app development . His understanding of different technologies and frameworks in the space is also very impressive. I hope I get the chance to work with him again',
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const review = [
     clientLocation: 'France',
     clientSource: 'Fiverr',
     clientReview:
-      'I have worked with Osama and he is very professional and excellent software  developer. I admire his speed of development and quality of work when given an assignment.',
+      'I have worked with Samuel and he is very professional and excellent software  developer. I admire his speed of development and quality of work when given an assignment.',
   },
 ];
 

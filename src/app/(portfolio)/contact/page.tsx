@@ -32,21 +32,21 @@ export default function ContactPage() {
           </div>
           <div className="h-16 w-full card_stylings text-xl sm:text-3xl flex items-center justify-center gap-x-8 sm:gap-x-16 text-snow">
             <Link
-              href=""
+              href="mailto:sameshiet45@gmail.com"
               className="hover:scale-125 ease-in-out duration-700"
               target="_blank"
             >
               <HiMail />
             </Link>
             <Link
-              href=""
+              href="https://github.com/samcesa45"
               className="hover:scale-125 ease-in-out duration-700"
               target="_blank"
             >
               <FaGithub />
             </Link>
             <Link
-              href=""
+              href="https://www.linkedin.com/in/samuel-christopher-0117aa349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               className="hover:scale-125 ease-in-out duration-700"
               target="_blank"
             >

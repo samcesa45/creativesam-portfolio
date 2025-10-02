@@ -62,9 +62,6 @@ const Intro = ({}: Props) => {
         >
           <FaTwitter />
         </Link>
-        {/* <Link href={SOCIAL_LINKS.FACEBOOK} target='_blank' rel='noreferrer' className=''>
-          <FaFacebook />
-        </Link> */}
         <Link
           href={SOCIAL_LINKS.LINKEDIN}
           target="_blank"

@@ -155,6 +155,69 @@ const portfolio = [
       },
     ],
   },
+  {
+    id: 8,
+    projectName: 'StokOps Web',
+    url: 'https://stokops.com/',
+    image: '/assets/stokops.png',
+    projectDetail:
+      'This system helps you manage your inventory, track your suppliers, and optimize your business operations with ease.',
+    technologiesUsed: [
+      {
+        tech: 'Laravel',
+      },
+      {
+        tech: 'mysql',
+      },
+      {
+        tech: 'Boostrap5',
+      },
+      {
+        tech: 'Sass',
+      },
+      {
+        tech: 'Jquery',
+      },
+      {
+        tech: 'AOS',
+      },
+    ],
+  },
+  {
+    id: 9,
+    projectName: 'classPadi Academy',
+    url: 'https://classpadi.com/',
+    image: '/assets/class-padi.png',
+    projectDetail:
+      'A landing page that helps users understands, enquire and access the main application',
+    technologiesUsed: [
+      {
+        tech: 'Laravel',
+      },
+      {
+        tech: 'Boostrap 5',
+      },
+    ],
+  },
+  {
+    id: 10,
+    projectName: 'MyEverydeal',
+    url: 'https://marketplace.myeverydeal.com',
+    image: '/assets/my-everydeal.png',
+    projectDetail:
+      'A multi vendor ecommerce marketplace that helps small and large businesses grow and reach new consumers. It offers a platform where customers in any part of the world can find and shop for all they need.',
+    technologiesUsed: [
+      {
+        tech: 'React',
+      },
+      {
+        tech: 'Redux/RTKQuery',
+      },
+      {
+        tech: 'Boostrap5',
+      },
+    ],
+  },
 ];
 
 export async function GET() {

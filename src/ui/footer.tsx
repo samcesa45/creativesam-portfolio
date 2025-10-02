@@ -14,7 +14,7 @@ export default function Footer() {
           <span>{new Date().getFullYear()} All Rights Reserved</span>
         </div>
         <div className="flex items-center">
-          <Link href="https://www.fiverr.com/samcvesa45" target="_blank">
+          <Link href="mailto:sameshiet45@gmail.com" target="_blank">
             Made with ❤️ by <span className="font-bold">samcesa45</span>
           </Link>
         </div>
