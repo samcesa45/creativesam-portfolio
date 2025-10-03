@@ -88,19 +88,19 @@ export default function Banner() {
             <span className="text-xs text-snow">Freelance Clients</span>
           </div>
 
-          <div className="flex items-center gap-x-1">
+          {/* <div className="flex items-center gap-x-1">
             <span className="text-base md:text-lg text-green font-bold">
               5+
             </span>
             <span className="text-xs text-snow">Honors & Awards</span>
-          </div>
+          </div> */}
 
-          <div className="flex items-center gap-x-1">
+          {/* <div className="flex items-center gap-x-1">
             <span className="text-base md:text-lg text-green font-bold">
               1+
             </span>
             <span className="text-xs text-snow">Opensource Projects</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </BannerLayout>
